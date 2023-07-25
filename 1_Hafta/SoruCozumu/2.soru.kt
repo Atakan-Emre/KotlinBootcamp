@@ -1,24 +1,16 @@
-fun faktoriyel(sayi: Int): Long {
-    return if (sayi <= 1) {
-        1
-    } else {
-        var sonuc: Long = 1
-        for (i in 2..sayi) {
-            sonuc *= i
-        }
-        sonuc
-    }
-}
+import java.util.Scanner
 
 fun main() {
-    print("Faktoriyelini hesaplamak istediginiz sayiyi girin: ")
-    val userInput = readLine()?.toIntOrNull()
-
-    if (userInput != null) {
-        val sonuc = faktoriyel(userInput)
-        println("$userInput! = $sonuc")
-    } else {
-        println("Gecersiz giris. Lütfen bir sayi girin.")
-    }
+    val scanner = Scanner(System.`in`)
+    print("Sayiyi giriniz: ")
+    val sayi = scanner.nextInt()
+    println("$sayi! = ${faktoriyelHesapla(sayi)}")
 }
 
+fun faktoriyelHesapla(sayi: Int): Int {
+    return if (sayi == 0 || sayi == 1) {
+        1
+    } else {
+        sayi * faktoriyelHesapla(sayi - 1)
+    }
+}
