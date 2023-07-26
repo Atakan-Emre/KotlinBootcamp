@@ -1,24 +1,13 @@
-fun removeVowels(input: String): String {
-    val vowels = setOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
-    val result = StringBuilder()
-
-    for (char in input) {
-        if (char.toLowerCase() !in vowels) {
-            result.append(char)
-        }
-    }
-
-    return result.toString()
-}
+import java.util.Scanner
 
 fun main() {
-    print("Bir string girin: ")
-    val userInput = readLine()
+    val scanner = Scanner(System.`in`)
+    print("Bir kelime giriniz: ")
+    val girdi = scanner.next()
+    println("Sesli harfler cikarildiktan sonra: ${sesliHarfleriKaldir(girdi)}")
+}
 
-    if (userInput != null) {
-        val result = removeVowels(userInput)
-        println("Sesli harfler cikarildiktan sonra: $result")
-    } else {
-        println("Gecersiz giris. Lütfen bir string girin.")
-    }
+fun sesliHarfleriKaldir(metin: String): String {
+    val sesliHarfler = "aeiouAEIOU"
+    return metin.filter { it !in sesliHarfler }
 }
