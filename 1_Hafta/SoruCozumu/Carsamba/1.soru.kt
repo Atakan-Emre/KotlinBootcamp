@@ -1,18 +1,18 @@
-class Dikdortgen(val uzunluk: Double, val genislik: Double) {
-    fun alanHesapla(): Double {
-        return uzunluk * genislik
+class Rectangle(val length: Double, val width: Double) {
+    fun calculateArea(): Double {
+        return length * width
     }
 
-    fun cevreHesapla(): Double {
-        return 2 * (uzunluk + genislik)
+    fun calculatePerimeter(): Double {
+        return 2 * (length + width)
     }
 }
 
 fun main() {
-    val dikdortgen = Dikdortgen(5.0, 3.0)
-    val alan = dikdortgen.alanHesapla()
-    val cevre = dikdortgen.cevreHesapla()
+    val rectangle = Rectangle(5.0, 3.0)
+    val area = rectangle.calculateArea()
+    val perimeter = rectangle.calculatePerimeter()
 
-    println("Dikdortgenin Alani: $alan")
-    println("Dikdortgenin Cevresi: $cevre")
+    println("Dikdörtgenin Alanı: $area")
+    println("Dikdörtgenin Çevresi: $perimeter")
 }
