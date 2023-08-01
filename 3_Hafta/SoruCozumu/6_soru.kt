@@ -1,5 +1,6 @@
 fun elemanKontrol(hashSet: HashSet<Int>, eleman: Int): Boolean {
     return hashSet.contains(eleman)
+    //   return eleman in hashSet
 }
 
 fun main() {
