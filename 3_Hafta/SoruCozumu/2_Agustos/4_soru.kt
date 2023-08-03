@@ -19,5 +19,5 @@ fun main() {
     val daire = Daire(3.0)
 
     println("Dikdörtgenin Alani: ${dikdortgen.alanHesapla()}") // Çıktı: Dikdörtgenin Alanı: 50.0
-    println("Dairenin Alani: ${daire.alanHesapla()}") // Çıktı: Dairenin Alanı: 28.274333882308138
+    println("Dairenin Alani: ${daire.alanHesapla()}") // Çıktı: Dairenin Alanı: 28.27
 }
