@@ -7,7 +7,7 @@ Bu repo, Kotlin ile Android Programlama Akademisindeki eğitimim sırasında ö�
 Her hafta yeni bir klasör oluşturacağım ve her klasörün içeriği aşağıdaki gibi olacak:
 
 1. **Ders Notları:** Bu klasör, haftalık olarak öğrendiğim konuları özetleyen notlarımı içerir.
-2. **Pratikler:** Bu klasör, haftalık derslerin ardından yaptığım pratik uygulamaları ve kodları içerir.
+2. **Pratikler:** Bu klasör, haftalık derslerin ardından yaptığımız ve derste anlatılan pratik uygulamaları ve kodları içerir.
 3. **Ödevler:** Bu klasör, verilen haftalık ödevler ve çözümlerini içerir.
 
 
