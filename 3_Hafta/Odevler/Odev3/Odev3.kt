@@ -12,7 +12,7 @@
 
 // Q4: Consider this data class: data class Fish(val name: String, val species:String, val colors:String) Which of the following is NOT valid code to create and destructure a Fish object?
 // Cevap: val (name4, species4, colors4) = Fish("Harry", "halibut")
-// Bu kod parçacığı geçersizdir çünkü 'Fish' veri sınıfının tüm parametreleri gereklidir ve burada 'colors' parametresi eksiktir.
+// Bu kod parçacığı geçersizdir çünkü 'Fish' veri sınıfının tüm parametreleri gereklidir ve burada 'colors' parametresi eksiktir ve kontrol edilmemiştir.
 
 // Q5: Let's say you own a zoo with lots of animals that all need to be taken care of. Which of the following would NOT be part of implementing caretaking?
 // Cevap: A data class for an entry in a feeding schedule.
