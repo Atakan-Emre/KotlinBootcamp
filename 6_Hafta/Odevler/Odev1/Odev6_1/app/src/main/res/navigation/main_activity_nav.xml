@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.example.odev6_1.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/ikinciEkranaGecis"
+            app:destination="@id/ikinciFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ikinciFragment"
+        android:name="com.example.odev6_1.IkinciFragment"
+        android:label="fragment_ikinci"
+        tools:layout="@layout/fragment_ikinci" >
+        <action
+            android:id="@+id/sonucEkraniGecis"
+            app:destination="@id/sonuncuFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/ikinciFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="ad"
+            app:argType="string"
+            android:defaultValue="Atakan" />
+        <argument
+            android:name="soyad"
+            app:argType="string"
+            android:defaultValue="Emre" />
+        <argument
+            android:name="yas"
+            app:argType="integer"
+            android:defaultValue="27" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonuncuFragment"
+        android:name="com.example.odev6_1.SonuncuFragment"
+        android:label="fragment_sonuncu"
+        tools:layout="@layout/fragment_sonuncu" />
+</navigation>
