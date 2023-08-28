@@ -3,10 +3,10 @@ The convention for naming a generic type is usually a single uppercase letter. T
 
 So the answers are:
 
-- [x] <T>
-- [ ] <Gen>
-- [ ] <Generic>
-- [ ] <X>
+- [x] &lt;T&gt;
+- [ ] &lt;Gen&gt;
+- [ ] &lt;Generic&gt;
+- [ ] &lt;X&gt;
 
 ## Question 2
 A restriction on the types allowed for a generic type is called a generic constraint.
