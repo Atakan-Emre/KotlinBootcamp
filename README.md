@@ -9,6 +9,7 @@ Her hafta yeni bir klasör oluşturacağım ve her klasörün içeriği aşağı
 1. **Ders Notları:** Bu klasör, haftalık olarak öğrendiğim konuları özetleyen notlarımı içerir.
 2. **Pratikler:** Bu klasör, haftalık derslerin ardından yaptığımız ve derste anlatılan pratik uygulamaları ve kodları içerir.
 3. **Ödevler:** Bu klasör, verilen haftalık ödevler ve çözümlerini içerir.
+4. **Soru Çözümü:** Bu klasör, verilen haftalık  soruları ve çözümlerini içerir.
 
 
 ## Nasıl Kullanılır?
