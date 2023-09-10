@@ -21,14 +21,13 @@ class MainActivity : AppCompatActivity() ,SearchView.OnQueryTextListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var notlarListe : ArrayList<Notlar>
     private lateinit var adapter:NotlarAdapter
-    private lateinit var refNotlar: DatabaseReference //burayı ekled
-
+    private lateinit var refNotlar: DatabaseReference //Veritabanı referansı
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.toolbar.title = "Not Uygulaması"
+        binding.toolbar.title = "Notlar Uygulaması"
         setSupportActionBar(binding.toolbar)
 
         binding.rv.setHasFixedSize(true)
